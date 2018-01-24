@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Torre Libben</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="Bootstrap 4 website template">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="http://maps.google.com/maps/api/js"></script><script src="https://code.jquery.com/jquery-2.1.4.min.js"></script><script src="https://cdn.jsdelivr.net/gmap3/7.2.0/gmap3.min.js"></script>
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!-- AZUL 00A19A, GRIS 706F6F, VERDE 008D36, 3AAA35, GRIS FUERTE 575756 -->
+</head>
+<body class="mobile-shift">
+
+<header>
+
+	<div class="fixed-navbar">
+
+		<div class="navbar-lockup">
+
+			<div class="logo">
+
+				<a href=""><img src="assets/img/logo_t.png" alt="Torre libben"></a>
+
+			</div>
+
+			<ul class="nav">
+
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="galery.html">Galeria</a></li>
+				<li><a href="">Contacto</a></li>
+				<li><a href="">Informacion adicional</a></li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div class="claim-lockup">
+	<div class="grid" style="top: 225px;">
+		<div class="bg-secondary" style="height: 396px; width: 1146px">	
+			<div class="container">
+				<div class="row fitness-first">
+					<div id="map" style=" height: 395px; position: relative; overflow: hidden;"></div>
+	
+					<script>
+					    $('#map')
+					      .gmap3({
+					        center:[20.732682, -103.454946],
+					        zoom:14
+				      	})
+				      	.marker([
+				        	{address:"Avenida General Ramón Corona 2243, Valle Real, Zapopan, Jal."}
+				      	])
+				      	.on('click', function (marker) {
+				        	marker.setIcon('http://maps.google.com/mapfiles/marker_green.png');
+				     	});
+					</script>
+  				</div>
+  			</div>
+  		</div>
+	</div>
+		<div class="claim">
+
+			<p class="headline" style="background-color: #575756a6; margin-bottom: 10px; color:#fff; padding: 10px;">Ubicados dentro de la ciudad</p>
+			<p class="kicker" style="background-color: #575756a6; left: 0px; color:#fff; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;">Av. Ramón Corona No. 2243, Fraccionamiento San Juan de Ocotán, Zapopan, Jalisco</p>
+
+		</div>
+
+	</div>
+
+	<div class="angled-overlay"></div>
+
+	<div class="slide-out-nav">
+
+		<ul class="mobile-nav">
+
+			<li><a href="">About</a></li>
+			<li><a href="">How It Works</a></li>
+			<li><a href="">Services</a></li>
+			<li><a href="">FAQ</a></li>
+			<li><a href="">Contact</a></li>
+
+		</ul>
+
+		<div class="mobile-nav-slice"></div>
+
+	</div>
+
+	<div class="mobile-nav-toggle">
+
+		<span></span>
+		<span></span>
+		<span></span>
+
+	</div>
+
+</header>
+<section>
+
+</section>
+
+
+
+
+
+<footer>
+
+	<div class="closer">
+
+		<div class="closing-claim">
+
+			<h1>We launch leaders with big ideas</h1>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+		</div>
+
+	</div>
+
+	<div class="bg-angled-left"></div>
+
+	<div class="bg-angled-right"></div>
+
+	<div class="container footer-lockup">
+
+		<div class="red-angle"></div>
+
+		<div class="row">
+
+			<div class="col-lg-7">
+
+				<h3>Resources</h3>
+
+				<p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
+
+			</div>
+
+			<div class="col-lg-8">
+
+				<h3>About us</h3>
+
+				<p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
+
+			</div>
+
+			<div class="col-lg-5">
+
+				<h3>Stay in touch</h3>
+
+				<div class="social-icons">
+
+					<a href=""><i class="icon-facebook"></i></a>
+					<a href=""><i class="icon-twitter"></i></a>
+					<a href=""><i class="icon-youtube-play"></i></a>
+					<a href=""><i class="icon-linkedin"></i></a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-lg-13 col-lg-offset-7">
+
+				<form>
+
+					<input type="text" placeholder="Your Name">
+
+					<input type="email" placeholder="Your Email" spellcheck="false">
+
+					<button class="newsletter-btn" type="submit" value="Join Newsletter">Join Newsletter<i class="icon-chevron-circle-right"></i></button>
+
+				</form>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="assets/js/functions.js"></script>
+</body>
+</html>
