@@ -1,6 +1,7 @@
-$('document').ready(function(){
-	$(".newsletter-btn").click(function(){
-        event.preventDefault();
+$('document').ready(function(e){
+    if(!e) e = window.event;
+	$(".newsletter-btn").click(function(e){
+        e.preventDefault();
 		sendEmail();
 	});
 
