@@ -2051,10 +2051,12 @@ header {
   height: 120px;
   z-index: 11;
   transition: all .2s ease-in-out;
+  background-color: #ffffffa3;
+  color: #000000;
 }
 
 .fixed-navbar.nav-fix {
-  background-color: rgba(13, 7, 25, 0.9);
+  background-color: #ffffff;
   height: 80px;
 }
 
@@ -2105,7 +2107,7 @@ header {
 }
 
 .navbar-lockup .nav li a {
-  color: #fff;
+  color: #000;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: .8px;
@@ -2354,7 +2356,7 @@ header {
 }
 
 .bg-secondary {
-  background-color: #008D36;
+  background-color: #008D36 !important;
 }
 
 .fitness-first,

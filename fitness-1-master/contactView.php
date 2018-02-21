@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +8,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="description" content="Bootstrap 4 website template">
-  <meta name="keywords" content="fitness, bootstrap, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
+  <meta name="description" content="Venta de departamentos libben">
+  <meta name="keywords" content="libben departamentos renta venta">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/pgwslideshow.css">
-    <script src="http://maps.google.com/maps/api/js"></script><script src="https://code.jquery.com/jquery-2.1.4.min.js"></script><script src="https://cdn.jsdelivr.net/gmap3/7.2.0/gmap3.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/img/favicon.ico" />
-
-
 
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <!-- AZUL 00A19A, GRIS 706F6F, VERDE 008D36, 3AAA35, GRIS FUERTE 575756 -->
@@ -35,7 +34,7 @@
 			<ul class="nav">
 
 				<li><a href="index.html">Inicio</a></li>
-				<li><a href="">Galeria</a></li>
+				<li><a href="galery.html">Galeria</a></li>
 				<li><a href="">Contacto</a></li>
 				<li><a href="">Informacion adicional</a></li>
 
@@ -46,12 +45,42 @@
 	</div>
 
 	<div class="claim-lockup">
-
+	<div class="grid" style="top: 225px;">
+		<div class="bg-secondary" >	
+			<div class="container">
+				<div class="row fitness-first">
+					
+					<div>
+						<div>
+							<h2>Contactanos!</h2>
+						</div>
+						<div class="form-group row">
+							<label class="col-6 col-form-label">Nombre:</label>
+							<div class="col-12">
+								<input id="nameComment" type="text" name="nombreC" class="form-control" >
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-6 col-form-label">Correo:</label>
+							<div class="col-12">
+								<input id="emailComment" type="email" name="emailC" class="form-control" required="required">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-6 col-form-label">Comentario:</label>
+							<div class="col-12">
+								<textarea id="contentComment" name="comment" class="form-control form-control-lg"></textarea>
+							</div>
+						</div>
+						<button id="sendComment">Enviar</button>
+					</div>
+					
+  				</div>
+  			</div>
+		</div>
 		<div class="claim">
 
-			<p class="headline">Vive bien<span>!</span></p>
-			<p class="kicker">Yes You Can<span>!</span></p>
-
+			
 		</div>
 
 	</div>
@@ -84,26 +113,13 @@
 
 </header>
 <section>
-	<script type="text/javascript"> 
-	$(document).ready(function() {
-    	$('.pgwSlideshow').pgwSlideshow();
-	});
-</script>
-	<ul class="pgwSlideshow">
-    <li><img src="assets/img/Renders_Torre_Libben/r1.jpg" alt=""></li>
-    <li><img src="assets/img/Renders_Torre_Libben/r2.jpg" alt=""></li>
-    <li><img src="assets/img/Renders_Torre_Libben/r3.jpg" alt="" ></li>
-    <li><img src="assets/img/Renders_Torre_Libben/r4.jpg" alt=""></li>
-    <li><img src="assets/img/Renders_Torre_Libben/r5.jpg" alt=""></li>
-    <li><img src="assets/img/Renders_Torre_Libben/r6.jpg" alt=""></li>
-    <li><img src="assets/img/Renders_Torre_Libben/r7.jpg" alt=""></li>
-    <li><img src="assets/img/Renders_Torre_Libben/r8.jpg" alt=""></li>
-    <li><img src="assets/img/Renders_Torre_Libben/r9.jpg" alt=""></li>
-    <li><img src="assets/img/Renders_Torre_Libben/r10.jpg" alt=""></li>
-    <li><img src="assets/img/Renders_Torre_Libben/r12.jpg" alt=""></li>
-    
-	</ul>
+
 </section>
+
+
+
+
+
 <footer>
 
 	<div class="closer">
@@ -185,7 +201,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="assets/js/functions.js"></script>
-<script src="assets/js/pgwslideshow.js"> </script>
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/sweetalert2.js"></script>
 
 </body>
 </html>

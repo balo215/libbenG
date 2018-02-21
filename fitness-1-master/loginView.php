@@ -1,7 +1,8 @@
 <?php
     session_start();
-    echo 1;
-    var_dump( $_SESSION);
+    if(isset($_SESSION["user"])){
+        echo "<script> window.location = 'adminView.php'; </script>";
+    }
 ?>
 
 <head>
@@ -21,13 +22,15 @@
         <div class="col-md-offset-5 col-md-3">
             <div class="form-login">
             <h4>Bienvenido.</h4>
-            <input type="email" id="userName" class="form-control input-sm chat-input" placeholder="Correo" required />
-            </br>
-            <input type="password" id="userPassword" class="form-control input-sm chat-input" placeholder="Contraseña" required="required" />
-            </br>
-            <div class="wrapper">
-            <span class="group-btn">     
-                <a href="#" class="btn btn-primary btn-md" id="loginBtn">Entrar<i class="fa fa-sign-in"></i></a>
+            <form method="post" action="login.php">
+                <input type="email" id="userName" name="userName" class="form-control input-sm chat-input" placeholder="Correo" required />
+                </br>
+                <input type="password" id="userPassword" name="userPassword" class="form-control input-sm chat-input" placeholder="Contraseña" required="required" />
+                </br>
+                <div class="wrapper">
+                <span class="group-btn">     
+                    <input href="#" class="btn btn-primary btn-md" name="login" type="submit" value = "Entrar">
+            </form>
             </span>
             </div>
             </div>

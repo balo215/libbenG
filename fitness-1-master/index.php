@@ -1,6 +1,5 @@
 <?php
     session_start();
-    var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +11,8 @@
   <meta name="description" content="Venta de departamentos libben">
   <meta name="keywords" content="libben departamentos renta venta">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <!-- AZUL 00A19A, GRIS 706F6F, VERDE 008D36, 3AAA35, GRIS FUERTE 575756 -->
 </head>
@@ -34,7 +35,7 @@
 				<li><a href="">Inicio</a></li>
 				<li><a href="galery.html">Galeria</a></li>
 				<li><a href="locate.html">Ubicanos</a></li>
-				<li><a href="">Contacto</a></li>
+				<li><a href="contactView.php">Contacto</a></li>
 				<li><a href="">Informacion adicional</a></li>
 
 			</ul>
@@ -63,7 +64,7 @@
 			<li><a href="">Inicio</a></li>
 			<li><a href="galery.html">Galeria</a></li>
 			<li><a href="locate.html">Ubicanos</a></li>
-			<li><a href="">Contacto</a></li>
+			<li><a href="contactView.php">Contacto</a></li>
 			<li><a href="">Informacion adicional</a></li>
 
 		</ul>
@@ -393,9 +394,9 @@
 
 				<form>
 
-					<input type="text" placeholder="Your Name">
+					<input type="text" placeholder="Nombre" required id="nlName">
 
-					<input type="email" placeholder="Your Email" spellcheck="false">
+					<input type="email" placeholder="correo@ejemplo.com" spellcheck="false" required="required" id="nlEmail">
 
 					<button class="newsletter-btn" type="submit" value="Join Newsletter">Join Newsletter<i class="icon-chevron-circle-right"></i></button>
 

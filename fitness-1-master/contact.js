@@ -56,7 +56,7 @@ $('document').ready(function(e){
             "comment": content},
       success: function(data){
         console.log(data);
-        if(data["db"]["status"] == true){
+        if(data["status"] == true){
           swal(
             'Gracias!',
             'Pronto tendras respuesta a tu pregunta en tu correo.',
